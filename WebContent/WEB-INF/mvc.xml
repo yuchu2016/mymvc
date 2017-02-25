@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<action name="login" actionClass="cn.cslg.news.LoginAction" formClass="cn.cslg.news.LoginForm">
+		<forward name="success">/admin/index.jsp</forward>
+		<forward name="error">/login.jsp</forward>
+	</action>
+	<action name="register" actionClass="cn.cslg.news.RegisterAction"
+		formClass="cn.cslg.news.RegisterForm">
+		<forward name="success">done.jsp</forward>
+		<forward name="error">register.jsp</forward>
+	</action>
+	<action name="changePassword" actionClass="cn.cslg.news.ChangePasswordAction"
+		formClass="cn.cslg.news.ChangePasswordForm">
+		<forward name="success">done.jsp</forward>
+		<forward name="error">password.jsp</forward>
+	</action>
+</mvc>
